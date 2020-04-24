@@ -17,7 +17,7 @@ module.exports = {
     const { channel } = message.member.voice;
     if (!channel) {
       //IF AUTHOR IS NOT IN VOICE CHANNEL
-      return message.channel.send("YOU NEED TO BE IN VOICE CHANNEL :/");
+      return message.channel.send("YOU NEED TO BE IN VOICE CHANNEL ╰༼=ಠਊಠ=༽╯");
     }
 
     //WE WILL ADD PERMS ERROR LATER :(
@@ -57,7 +57,7 @@ module.exports = {
       } catch (error) {
         if (message.include === "copyright") {
           return message
-            .reply("THERE IS COPYRIGHT CONTENT IN VIDEO -_-")
+            .reply("THERE IS COPYRIGHT CONTENT IN VIDEO ._.")
             .catch(console.error);
         } else {
           console.error(error);
@@ -95,7 +95,7 @@ module.exports = {
         console.error(`Could not join voice channel: ${error}`);
         message.client.queue.delete(message.guild.id);
         await channel.leave();
-        return message.channel.send({embed: {"description": `😭 | Could not join the channel: ${error}`, "color": "#ff2050"}}).catch(console.error);
+        return message.channel.send({embed: {"description": `( X ਊ X ) | Could not join the channel: ${error}`, "color": "#ff2050"}}).catch(console.error);
       }
     }
     
